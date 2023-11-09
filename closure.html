@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Counter</title>
+</head>
+<body>
+    <button onclick="updateClickCount()">click me</button>
+    <p>Click count: <span id="clickCount">0</span></p>
+
+    <script>
+        var clickCount = 0;
+        function updateClickCount() {
+            clickCount++; 
+            document.getElementById('clickCount').textContent = clickCount;
+        }
+    </script>
+</body>
+</html>
